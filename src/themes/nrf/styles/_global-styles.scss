@@ -249,11 +249,17 @@ footer .social-network a:hover {
   .md-hidden > .navToggler {
     float: right !important;
   }
+  .navToggler{
+    background: var(--nrf-green);
+    padding: 2px;
+    border-radius: 2px;
+  }
   .navToggler .icon{
     right: 0;
     top: 0;
     padding: 4px;
     position: relative;
+    color: white;
   }
   #collapsingNav {
     float: left !important;
