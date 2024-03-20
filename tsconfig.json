@@ -38,7 +38,7 @@
     ],
     "types": [
       "node",
-      "jasmine"
+      "jasmine",
     ],
     "useDefineForClassFields": false
   },

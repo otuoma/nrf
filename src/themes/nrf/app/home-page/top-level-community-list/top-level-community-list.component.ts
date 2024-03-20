@@ -8,7 +8,6 @@ import {APP_CONFIG, AppConfig} from '../../../../../config/app-config.interface'
 import {CommunityDataService} from '../../../../../app/core/data/community-data.service';
 import {PaginationService} from '../../../../../app/core/pagination/pagination.service';
 
-
 HC_sunburst(Highcharts);
 require('highcharts/modules/exporting')(Highcharts);
 
