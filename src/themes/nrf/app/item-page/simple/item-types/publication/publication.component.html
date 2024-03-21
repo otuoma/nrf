@@ -25,18 +25,19 @@
     </div>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
 
-    <div *ngIf="hasData(totalDownloads)">
-
+    <div *ngIf="hasData(totalVisits)">
       <h2 class="simple-view-element-header">
-        <span class="badge badge-info">
-          {{ totalDownloads.points[0].values['views'] }}
-        </span> Downloads
+        {{ totalVisits.points[0].values['views'] }} Total Views
       </h2>
-
-      <figure class="highcharts-figure">
-        <div id="downloadsBarGraphContainer"></div>
-      </figure>
     </div>
+    <div *ngIf="hasData(totalDownloads)">
+      <h2 class="simple-view-element-header">
+        {{ totalDownloads.points[0].values['views'] }} Downloads
+      </h2>
+    </div>
+<!--    <figure class="highcharts-figure">-->
+<!--      <div id="downloadsBarGraphContainer"></div>-->
+<!--    </figure>-->
 
     <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"

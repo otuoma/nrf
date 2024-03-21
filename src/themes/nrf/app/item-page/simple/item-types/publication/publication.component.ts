@@ -9,6 +9,8 @@ import {UsageReportDataService} from '../../../../../../../app/core/statistics/u
 import {UsageReport} from '../../../../../../../app/core/statistics/models/usage-report.model';
 import * as Highcharts from 'highcharts';
 
+import HC_histogram from 'highcharts/modules/histogram-bellcurve';
+
 
 /**
  * Component that represents a publication Item page
@@ -23,12 +25,12 @@ import * as Highcharts from 'highcharts';
 })
 export class PublicationComponent extends BaseComponent implements OnInit {
 
-  usageReport: UsageReport[];
-  totalVisits: UsageReport;
-  totalVisitsPerMonth: UsageReport;
-  topCountries: UsageReport;
-  topCities: UsageReport;
-  totalDownloads: UsageReport;
+  usageReport: UsageReport[] | null;
+  totalVisits: UsageReport | null;
+  totalVisitsPerMonth: UsageReport | null;
+  topCountries: UsageReport | null;
+  topCities: UsageReport | null;
+  totalDownloads: UsageReport | null;
   // Highcharts: typeof Highcharts = Highcharts;
 
   constructor(
@@ -42,14 +44,12 @@ export class PublicationComponent extends BaseComponent implements OnInit {
   ngOnInit() {
 
     super.ngOnInit();
-    console.log('=========');
-    console.log('=========');
     let report = this.usageReportDataService
-      .searchStatistics(this.object._links.self.href, 0, 10);
+      .searchStatistics(this.object._links.self.href, 0, 20);
 
     report.subscribe((uReport: UsageReport[]) => {
       this.usageReport = uReport;
-      console.log(this.usageReport);
+      // console.log(this.usageReport);
       uReport.forEach( repo =>{
 
         if (repo.reportType === 'TotalVisits'){
@@ -82,15 +82,19 @@ export class PublicationComponent extends BaseComponent implements OnInit {
   }
 
   renderDownloadsBarGraph(){
+    console.log('====RENDERED=====');
+    console.log('=========');
     let chart = Highcharts.chart('downloadsBarGraphContainer',{
-      series: [
-        {
-          type: 'line',
-          data: [1, 2, 3, 4],
-        },
-      ],
+
       }
     );
-    // chart.container = this.downloadsRenderTo.nativeElement;
+  }
+
+  totalBitstreamsDownloads(totalDownloads: UsageReport): number{
+    let totalBitstreamsDownloads = 0;
+    totalBitstreamsDownloads += this.totalDownloads.points.reduce((accumulator, currentValue, currentIndex) => accumulator + currentValue.values[currentIndex].views, totalBitstreamsDownloads);
+
+
+    return totalBitstreamsDownloads;
   }
 }
