@@ -61,6 +61,7 @@ import { LangSwitchComponent } from './app/shared/lang-switch/lang-switch.compon
 import {HomePageModule} from '../../app/home-page/home-page.module';
 import {ChartModule} from 'angular-highcharts';
 import {UsageReportDataService} from '../../app/core/statistics/usage-report-data.service';
+import {HighchartsChartModule} from "highcharts-angular";
 
 
 /**
@@ -117,6 +118,7 @@ const DECLARATIONS = [
         DsoPageModule,
         HomePageModule,
         ChartModule,
+        HighchartsChartModule,
     ],
     declarations: [
         DECLARATIONS

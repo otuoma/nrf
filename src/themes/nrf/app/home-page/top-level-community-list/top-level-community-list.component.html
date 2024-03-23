@@ -21,9 +21,13 @@
     </div>
     <div class="col-md-6 pt-4">
       <figure class="highcharts-figure">
-        <div id="highcharts-container"></div>
+        <highcharts-chart
+          [Highcharts]="Highcharts"
+          [options]="chartOptions" [title]="'my title'"
+          [(update)]="updateFlag" *ngIf="isHighcharts" [callbackFunction]="chartCallback"
+          style="width: 100%; height: 400px; display: block;"
+        ></highcharts-chart>
       </figure>
-
     </div>
   </div>
 </div>
