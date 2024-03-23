@@ -12,6 +12,10 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: Cairo,sans-serif;
 }
+h2, .h2, h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 a {
   color: #000;
 }
@@ -23,6 +27,20 @@ a {
 }
 .show-onhover:hover{
   display: inline-block !important;
+}
+#recent-submissions .item-list-title{
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#recent-submissions .row:hover{
+  background-color: #f8f9fa;
+}
+#recent-submissions .thumbnail-content{
+  display: contents;
+}
+#recent-submissions .thumbnail-content .inner{
+  padding: 10px 0 10px 8px;
 }
 #search-navbar-container .btn{
   color: #fff;

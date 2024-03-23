@@ -1,8 +1,8 @@
 <ng-container *ngVar="(itemRD$ | async) as itemRD">
         <div class="mt-4" [ngClass]="placeholderFontClass" *ngIf="itemRD?.hasSucceeded && itemRD?.payload?.page.length > 0" @fadeIn>
-                <div class="d-flex flex-row border-bottom mb-4 pb-4"></div>
                 <h2> {{'home.recent-submissions.head' | translate}}</h2>
-                <div class="my-4" *ngFor="let item of itemRD?.payload?.page">
+                <div class="d-flex border-bottom flex-row "></div>
+                <div class="my-4" id="recent-submissions" *ngFor="let item of itemRD?.payload?.page">
                         <ds-listable-object-component-loader
                           [object]="item"
                           [showThumbnails]="false"
