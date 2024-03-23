@@ -22,7 +22,7 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
   updateFlag = false;
   series: SeriesOptionsType = {
     type: 'pie',
-    name: '', startAngle: 300,
+    name: '', startAngle: 320,
     innerSize: '50%',
     data: [],
     dataLabels: {

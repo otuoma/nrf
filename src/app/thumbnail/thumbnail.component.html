@@ -12,8 +12,9 @@
          [src]="src | dsSafeUrl" [alt]="alt | translate" (error)="errorHandler()" (load)="successHandler()">
     <div *ngIf="src === null && !isLoading" class="thumbnail-content outer">
       <div class="inner">
-        <div class="thumbnail-placeholder centered lead">
-          {{ placeholder | translate }}
+        <div class="thumbnail-placeholder centered lead" style="border: none; height: 100%;">
+<!--          {{ placeholder | translate }}-->
+          <img src="/assets/nrf/images/nrf-abstract-thumbnail.png" alt="" width="100%" height="100%"/>
         </div>
       </div>
     </div>

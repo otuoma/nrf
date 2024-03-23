@@ -34,7 +34,7 @@ export class MediaViewerComponent implements OnDestroy, OnInit {
 
   isLoading = true;
 
-  thumbnailPlaceholder = './assets/images/replacement_document.svg';
+  thumbnailPlaceholder = './assets/images/nrf-abstract-thumbnail.png';
 
   thumbnailsRD$: Observable<RemoteData<PaginatedList<Bitstream>>>;
 

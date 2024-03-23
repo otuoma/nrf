@@ -3,7 +3,10 @@
                 <div class="d-flex flex-row border-bottom mb-4 pb-4"></div>
                 <h2> {{'home.recent-submissions.head' | translate}}</h2>
                 <div class="my-4" *ngFor="let item of itemRD?.payload?.page">
-                        <ds-listable-object-component-loader [object]="item" [viewMode]="viewMode" class="pb-4">
+                        <ds-listable-object-component-loader
+                          [object]="item"
+                          [showThumbnails]="false"
+                          [viewMode]="viewMode" class="pb-4">
                         </ds-listable-object-component-loader>
                 </div>
                 <button (click)="onLoadMore()" class="btn btn-primary search-button mt-4">
