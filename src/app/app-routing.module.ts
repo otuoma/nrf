@@ -40,6 +40,7 @@ import {
 import { ServerCheckGuard } from './core/server-check/server-check.guard';
 import { MenuResolver } from './menu.resolver';
 import { ThemedPageErrorComponent } from './page-error/themed-page-error.component';
+import {KenyaRepositoriesComponent} from "../themes/nrf/app/pages/kenya-repositories/kenya-repositories.component";
 
 @NgModule({
   imports: [
@@ -53,6 +54,10 @@ import { ThemedPageErrorComponent } from './page-error/themed-page-error.compone
         resolve: [MenuResolver],
         children: [
           { path: '', redirectTo: '/home', pathMatch: 'full' },
+          { path: 'nrf-pages/repositories-in-kenya',
+            pathMatch: 'full',
+            component: KenyaRepositoriesComponent
+          },
           {
             path: 'reload/:rnd',
             component: ThemedPageNotFoundComponent,
