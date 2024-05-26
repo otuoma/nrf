@@ -5,7 +5,6 @@ import { FooterComponent as BaseComponent } from '../../../../app/footer/footer.
   selector: 'ds-footer',
   styleUrls: ['./footer.component.scss'],
   templateUrl: './footer.component.html'
-  // templateUrl: '../../../../app/footer/footer.component.html'
 })
 export class FooterComponent extends BaseComponent {
 }

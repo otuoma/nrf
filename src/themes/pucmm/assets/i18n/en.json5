@@ -1,6 +1,7 @@
 {
   "repository.listelement.badge": "Repository",
   "repository.page.titleprefix": "Repository: ",
+  "home.jumbotron.intro-paragraph": "The Institutional Repository strives to provide open access, capture, store, preserve, index and distribute in digital format, the research of the different faculties, departments, research centers and other units dedicated to research at the PUCMM as well as expand the visibility of research through global networks.",
 
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
 
@@ -1620,7 +1621,7 @@
 
   "file-section.error.header": "Error obtaining files for this item",
 
-  "footer.copyright": "{{ year }}",
+  "footer.copyright": "Copyright {{ year }}",
 
   "footer.link.dspace": "DSpace software",
 
@@ -3498,9 +3499,9 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title": "National Repository",
+  "repository.title": "Institutional Repository",
 
-  "repository.title.prefix": "National Repository :: ",
+  "repository.title.prefix": "Institutional Repository :: ",
 
   "resource-policies.add.button": "Add",
 

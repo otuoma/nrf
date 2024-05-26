@@ -24,8 +24,12 @@
     <div *ngIf="mediaViewer.image || mediaViewer.video" class="mb-2">
       <ds-themed-media-viewer [item]="object"></ds-themed-media-viewer>
     </div>
-    <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
+
+    <div *ngIf="!hasData(totalDownloads)">
+      <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
+    </div>
     <div *ngIf="hasData(totalDownloads)">
+      <ds-themed-item-page-file-section [item]="object" [itemDownloads]="totalDownloads"></ds-themed-item-page-file-section>
 
       <h2 class="simple-view-element-header">
         <span class="badge badge-info">

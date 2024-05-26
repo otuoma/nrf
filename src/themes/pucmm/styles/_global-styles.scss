@@ -4,7 +4,8 @@
 @import '../../../styles/_global-styles.scss';
 
 :root {
-  --nrf-green: #40b349;
+  --pucmm-dark-blue: #00588e;
+  --pucmm-light-blue: #186caf;
 }
 
 
@@ -19,8 +20,14 @@ h2, .h2, h4 {
 a {
   color: #000;
 }
-.bg-nrf-green{
-  background-color: var(--nrf-green);
+.bg-pucmm-blue{
+  background-color: var(--pucmm-blue);
+}
+.bg-pucmm-light-blue{
+  background-color: var(--pucmm-light-blue);
+}
+.bg-pucmm-dark-blue{
+  background-color: var(--pucmm-dark-blue);
 }
 .show-onhover{
   display: none;
@@ -55,7 +62,7 @@ a {
   color: #fff !important;
 }
 .navbar-nav a.nav-link {
-  color: var(--nrf-green) !important;
+  color: var(--pucmm-blue) !important;
   font-weight: bold;
 }
 .navbar-brand img{
@@ -64,7 +71,7 @@ a {
 #home-jumbotron{
   color: #fff;
   text-align: center;
-  background-image: url("/assets/nrf/images/home-slider/home-slider-2.jpg");
+  background-image: url("/assets/pucmm/images/home-slider/research-lab-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-shadow: 2px 2px 2px #000;
@@ -77,10 +84,11 @@ a {
 #home-jumbotron form input{
   height: 55px;
   border: none !important;
-  border-radius: 0;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
 }
 #home-jumbotron form .input-group-append .btn{
-  background-color: var(--nrf-green);
+  background-color: var(--pucmm-dark-blue);
   color: #fff;
   border-radius: 15px;
 }
@@ -106,7 +114,7 @@ a {
   margin-bottom: 0 !important;
 }
 .dropdown-menu .nav-link{
-  color: var(--nrf-green) !important;
+  color: var(--pucmm-light-blue) !important;
 }
 
 #home-sidebar div{
@@ -114,14 +122,14 @@ a {
   margin-bottom: 30px !important;
 }
 .btn-primary {
-  background-color: var(--nrf-green);
-  border-color: var(--nrf-green);
+  background-color: var(--pucmm-dark-blue);
+  border-color: var(--pucmm-dark-blue);
 }
 .badge-info {
-  background-color: var(--nrf-green);
+  background-color: var(--pucmm-dark-blue);
 }
 .badge-secondary {
-  background-color: var(--nrf-green);
+  background-color: var(--pucmm-dark-blue);
 }
 
 /*******************/
@@ -132,7 +140,7 @@ footer h2 {
   background: #7c8490;
 }
 footer {
-  background: var(--nrf-green);
+  background: var(--pucmm-dark-blue);
   color: white;
   margin-top:100px;
 }
@@ -239,7 +247,22 @@ footer .social-network a:hover {
 }
 #mainNavContainer nav.navbar {
   align-items: center !important;
+  background: var(--pucmm-dark-blue);
 }
+div#header-navbar-wrapper{
+  border-bottom: var(--pucmm-dark-blue) !important;
+}
+#collapsingNav .navbar-nav li .nav-item a{
+  color: #fff !important;
+}
+.dropdown-menu {
+  background-color: var(--pucmm-dark-blue) !important;
+}
+
+.loginDropdownMenu {
+  background-color: var(--pucmm-light-blue) !important;
+}
+
 
 @media only screen and (max-width: 768px) {
   .mobile-hidden {
@@ -251,6 +274,7 @@ footer .social-network a:hover {
   #mainNavContainer .container-fluid .container nav.navbar{
       position: inherit;
       height: 125px;
+    background: var(--pucmm-dark-blue);
   }
 
   #home-jumbotron .container {
@@ -268,7 +292,7 @@ footer .social-network a:hover {
     float: right !important;
   }
   .navToggler{
-    background: var(--nrf-green);
+    background: var(--pucmm-light-blue);
     padding: 2px;
     border-radius: 2px;
   }
@@ -288,7 +312,5 @@ footer .social-network a:hover {
   .navbar-expand-md.navbar-container > .navbar-inner-container {
     padding: 0 0 !important;
   }
-
-
 }
 

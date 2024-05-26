@@ -2,6 +2,7 @@ import { ThemedComponent } from '../../../../shared/theme-support/themed.compone
 import { FileSectionComponent } from './file-section.component';
 import {Component, Input} from '@angular/core';
 import {Item} from '../../../../core/shared/item.model';
+import {UsageReport} from '../../../../core/statistics/models/usage-report.model';
 
 @Component({
     selector: 'ds-themed-item-page-file-section',
@@ -10,6 +11,7 @@ import {Item} from '../../../../core/shared/item.model';
 export class ThemedFileSectionComponent extends ThemedComponent<FileSectionComponent> {
 
     @Input() item: Item;
+    @Input() itemDownloads: UsageReport;
 
     protected inAndOutputNames: (keyof FileSectionComponent & keyof this)[] = ['item'];
 

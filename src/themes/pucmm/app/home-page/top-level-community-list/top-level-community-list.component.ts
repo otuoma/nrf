@@ -14,7 +14,6 @@ import {SeriesOptionsType} from 'highcharts';
   templateUrl: './top-level-community-list.component.html'
 })
 export class TopLevelCommunityListComponent extends BaseComponent implements OnInit{
-  minVisibility = 5;
   communitiesList: Community[];
   data: {name: string, y: number}[] = [];
   isHighcharts = typeof Highcharts === 'object';
@@ -22,7 +21,7 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
   updateFlag = false;
   series: SeriesOptionsType = {
     type: 'pie',
-    name: '', startAngle: 320,
+    name: '', startAngle: 315,
     innerSize: '50%',
     data: [],
     dataLabels: {
@@ -44,13 +43,14 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
     },
     tooltip: {
       // pointFormat: '<b>{point.percentage:.1f}%</b> of all repository items'
-      pointFormat: 'Moderated for visibility'
+      // pointFormat: 'Moderada para la visibilidad'
+      pointFormat: '<b>{point.percentage:.1f}%</b>'
     },
     plotOptions : {
       pie: {
         size: '50%',
         allowPointSelect: true,
-        cursor: 'pointer',
+        cursor: 'pointer'
       }
     },
     series : [this.series]
