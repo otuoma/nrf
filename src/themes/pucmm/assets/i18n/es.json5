@@ -2,6 +2,7 @@
   "repository.listelement.badge": "Repositorio",
   "repository.page.titleprefix": "Repositorio: ",
   "home.jumbotron.intro-paragraph": "El Repositorio Institucional se esfuerza por brindar acceso abierto, capturar, almacenar, preservar, indexar y distribuir en formato digital, las investigaciones de las diferentes facultades, departamentos, centros de investigación y otras unidades dedicadas a la investigación de la PUCMM así como ampliar la visibilidad de las investigaciones. a través de redes globales.",
+  "search.filters.filter.supportedlanguage.head": "Filtros",
 
   // "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
   "401.help": "No está autorizado a acceder a esta página. Puede utilizar el botón de abajo para volver a la página de inicio.",

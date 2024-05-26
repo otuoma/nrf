@@ -43,8 +43,6 @@ export class UntypedItemComponent extends BaseComponent implements OnInit {
   ngOnInit(): void {
 
     super.ngOnInit();
-    console.log('=========');
-    console.log('=========');
     let report = this.usageReportDataService
       .searchStatistics(this.object._links.self.href, 0, 10);
 
@@ -55,7 +53,7 @@ export class UntypedItemComponent extends BaseComponent implements OnInit {
 
         if (repo.reportType === 'TotalVisits'){
           this.totalVisits = repo;
-          console.log('=========');
+          console.log('====TotalVisits=====');
           console.log('=========');
           console.log(repo);
         }

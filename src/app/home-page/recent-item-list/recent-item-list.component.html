@@ -5,7 +5,7 @@
                 <div class="my-4" id="recent-submissions" *ngFor="let item of itemRD?.payload?.page">
                         <ds-listable-object-component-loader
                           [object]="item"
-                          [showThumbnails]="false"
+                          [showThumbnails]="true"
                           [viewMode]="viewMode" class="pb-4">
                         </ds-listable-object-component-loader>
                 </div>
