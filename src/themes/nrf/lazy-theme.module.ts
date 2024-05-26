@@ -159,10 +159,8 @@ import { RequestCopyModule } from 'src/app/request-copy/request-copy.module';
 import {UserMenuComponent} from './app/shared/auth-nav-menu/user-menu/user-menu.component';
 import { BrowseByComponent } from './app/shared/browse-by/browse-by.component';
 import { RegisterEmailFormComponent } from './app/register-email-form/register-email-form.component';
-import {KenyaRepositoriesComponent} from "./app/pages/kenya-repositories/kenya-repositories.component";
 
 const DECLARATIONS = [
-  KenyaRepositoriesComponent,
   FileSectionComponent,
   HomePageComponent,
   RootComponent,

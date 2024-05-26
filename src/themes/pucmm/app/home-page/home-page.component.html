@@ -1,0 +1,100 @@
+<ds-themed-home-news></ds-themed-home-news>
+<ng-container *ngIf="(site$ | async) as site">
+  <ds-view-tracker [object]="site"></ds-view-tracker>
+</ng-container>
+<div class="container-fluid bg-light pt-4">
+  <ds-themed-top-level-community-list></ds-themed-top-level-community-list>
+</div>
+
+<div class="container-fluid bg-light pt-4">
+  <div class="container">
+
+  </div>
+</div>
+<section class="py-12 py-sm-24 bg-dark position-relative">
+  <div class="container position-relative">
+    <div class="mw-md mx-auto mw-lg-none">
+      <div class="row align-items-end py-5">
+        <div class="col-12 col-lg-6 col-xl-8 mb-16 mb-lg-0">
+          <div class="mw-lg">
+            <h1 class="h3 text-white mb-6">Registry of Repositories in Kenya (RoRiK)</h1>
+            <div class="mw-md opacity-75">
+              <p class="text-white mb-0">
+                NRF is developing a Registry of Research Repositories in Kenya (RoRiK) in
+                an effort to promote access to research data in the country.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+          <div class="d-flex w-100 ps-xl-16 flex-column ms-lg-auto mw-lg-xs">
+            <a class="btn mb-4 bg-nrf-green text-white bold" routerLink="/nrf-pages/repositories-in-kenya">
+              Go to the Registry
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 mr-0 pr-0">
+      <ds-recent-item-list *ngIf="recentSubmissionspageSize > 0"></ds-recent-item-list>
+    </div>
+    <div class="col-md-3 bg-light mt-4 ml-0" id="home-sidebar">
+      <h4 class="mt-4 text-center border-bottom pb-3 border-dark border-2">Browse By</h4>
+
+      <div class="mt-4 mb-4">
+        <a routerLink="/browse/subject" class="mt-4 mb-4">
+          <figure class="mx-auto text-center">
+            <img class="figure-img img-fluid" width="80px"
+                 src="/assets/nrf/images/browse/education.png" alt=""/>
+            <figcaption class="figure-caption text-center font-weight-bold">
+              <h5>Subject</h5>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="mt-4 mb-4">
+        <a routerLink="/browse/dateissued" class="mt-4 mb-4">
+          <figure class="mx-auto text-center">
+            <img class="figure-img img-fluid" width="80px"
+                 src="/assets/nrf/images/browse/calendar.png" alt=""/>
+            <figcaption class="figure-caption text-center font-weight-bold">
+              <h5>Date Issued</h5>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="mt-4 mb-4">
+        <a routerLink="/browse/title" class="mt-4 mb-4">
+          <figure class="mx-auto text-center">
+            <img class="figure-img img-fluid" width="80px"
+                 src="/assets/nrf/images/browse/puzzle.png" alt=""/>
+            <figcaption class="figure-caption text-center font-weight-bold">
+              <h5>Titles</h5>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="mt-4 mb-4">
+        <a routerLink="/browse/author">
+          <figure class="mx-auto text-center">
+            <img class="figure-img img-fluid" width="80px"
+                 src="/assets/nrf/images/browse/users-silhouette.png" alt=""/>
+            <figcaption class="figure-caption text-center font-weight-bold">
+              <h5>Authors</h5>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</div>

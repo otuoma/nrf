@@ -1,0 +1,294 @@
+// Add any global css for the theme here
+
+// imports the base global style
+@import '../../../styles/_global-styles.scss';
+
+:root {
+  --nrf-green: #40b349;
+}
+
+
+/*** ADDED BY SYSTEMS LIBRARIAN ***/
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cairo,sans-serif;
+}
+h2, .h2, h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+a {
+  color: #000;
+}
+.bg-nrf-green{
+  background-color: var(--nrf-green);
+}
+.show-onhover{
+  display: none;
+}
+.show-onhover:hover{
+  display: inline-block !important;
+}
+#recent-submissions .item-list-title{
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#recent-submissions .row:hover{
+  background-color: #f8f9fa;
+}
+#recent-submissions .thumbnail-content{
+  display: contents;
+}
+#recent-submissions .thumbnail-content .inner{
+  padding: 10px 0 10px 8px;
+}
+#search-navbar-container .btn{
+  color: #fff;
+}
+.md-hidden{
+  display: none;
+}
+#topNav{
+  padding: 0.5rem 0;
+}
+#topNav i, .dropdownLogin{
+  color: #fff !important;
+}
+.navbar-nav a.nav-link {
+  color: var(--nrf-green) !important;
+  font-weight: bold;
+}
+.navbar-brand img{
+  max-height: 60px;
+}
+#home-jumbotron{
+  color: #fff;
+  text-align: center;
+  background-image: url("/assets/nrf/images/home-slider/home-slider-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px 2px #000;
+}
+#home-jumbotron .container{
+  margin-top: 30px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+#home-jumbotron form input{
+  height: 55px;
+  border: none !important;
+  border-radius: 0;
+}
+#home-jumbotron form .input-group-append .btn{
+  background-color: var(--nrf-green);
+  color: #fff;
+  border-radius: 15px;
+}
+#home-jumbotron .input-group-append {
+  margin-left: -12px;
+}
+#home-title{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+#home-community-list ul li{
+  margin-bottom: 0.25rem !important;
+  margin-top: 0.25rem !important;
+}
+.highcharts-plot-background{
+  padding: 8px;
+}
+.highcharts-credits{
+  display: none;
+}
+.jumbotron {
+  margin-bottom: 0 !important;
+}
+.dropdown-menu .nav-link{
+  color: var(--nrf-green) !important;
+}
+
+#home-sidebar div{
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+.btn-primary {
+  background-color: var(--nrf-green);
+  border-color: var(--nrf-green);
+}
+.badge-info {
+  background-color: var(--nrf-green);
+}
+.badge-secondary {
+  background-color: var(--nrf-green);
+}
+
+/*******************/
+footer h2 {
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+  background: #7c8490;
+}
+footer {
+  background: var(--nrf-green);
+  color: white;
+  margin-top:100px;
+}
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+footer .copy {
+  font-size: 12px;
+  padding: 10px;
+}
+footer .footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+footer ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+footer ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+footer .social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+footer .social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+footer .social-network a.icoFacebook:hover i
+{
+  color: #fff;
+}
+footer .social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+footer .social-network a.socialIcon:hover {
+  color: #44BCDD;
+}
+footer .socialHoverClass {
+  color: #44BCDD;
+}
+footer .social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+footer .social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+footer .social-circle li a:hover i
+{
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+footer .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+footer .social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+footer .social-network a:hover {
+  background: #ff304d;
+}
+#collapsingNav {
+  float: right !important;
+}
+#mainNavContainer nav.navbar {
+  align-items: center !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  #homeSearchForm{
+    padding: 20px;
+  }
+  #mainNavContainer .container-fluid .container nav.navbar{
+      position: inherit;
+      height: 125px;
+  }
+
+  #home-jumbotron .container {
+    margin-top: 10px !important;
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
+  }
+
+  .md-hidden{
+    //display: block;
+    align-items: center !important;
+    display: flex;
+  }
+  .md-hidden > .navToggler {
+    float: right !important;
+  }
+  .navToggler{
+    background: var(--nrf-green);
+    padding: 2px;
+    border-radius: 2px;
+  }
+  .navToggler .icon{
+    right: 0;
+    top: 0;
+    padding: 4px;
+    position: relative;
+    color: white;
+  }
+  #collapsingNav {
+    float: left !important;
+  }
+  .navbar-brand img {
+    max-height: 35px;
+  }
+  .navbar-expand-md.navbar-container > .navbar-inner-container {
+    padding: 0 0 !important;
+  }
+
+
+}
+
