@@ -159,10 +159,11 @@ import { RequestCopyModule } from 'src/app/request-copy/request-copy.module';
 import {UserMenuComponent} from './app/shared/auth-nav-menu/user-menu/user-menu.component';
 import { BrowseByComponent } from './app/shared/browse-by/browse-by.component';
 import { RegisterEmailFormComponent } from './app/register-email-form/register-email-form.component';
-import {KenyaRepositoriesComponent} from "./app/pages/kenya-repositories/kenya-repositories.component";
+import { AboutPucmmComponent } from './app/about-pucmm/about-pucmm.component';
+import {CustomSidebarComponent} from "./app/custom-sidebar/custom-sidebar.component";
 
 const DECLARATIONS = [
-  KenyaRepositoriesComponent,
+  AboutPucmmComponent,
   FileSectionComponent,
   HomePageComponent,
   RootComponent,
@@ -308,7 +309,10 @@ const DECLARATIONS = [
     FormModule,
     RequestCopyModule,
   ],
-  declarations: DECLARATIONS,
+  declarations: [
+    DECLARATIONS,
+    CustomSidebarComponent
+  ],
   exports: [
     CommunityPageSubCollectionListComponent
   ]

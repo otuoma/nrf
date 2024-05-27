@@ -40,7 +40,7 @@ import {
 import { ServerCheckGuard } from './core/server-check/server-check.guard';
 import { MenuResolver } from './menu.resolver';
 import { ThemedPageErrorComponent } from './page-error/themed-page-error.component';
-import {KenyaRepositoriesComponent} from "../themes/nrf/app/pages/kenya-repositories/kenya-repositories.component";
+import {AboutPucmmComponent} from '../themes/pucmm/app/about-pucmm/about-pucmm.component';
 
 @NgModule({
   imports: [
@@ -54,9 +54,9 @@ import {KenyaRepositoriesComponent} from "../themes/nrf/app/pages/kenya-reposito
         resolve: [MenuResolver],
         children: [
           { path: '', redirectTo: '/home', pathMatch: 'full' },
-          { path: 'nrf-pages/repositories-in-kenya',
+          { path: 'page/about-the-repository',
             pathMatch: 'full',
-            component: KenyaRepositoriesComponent
+            component: AboutPucmmComponent
           },
           {
             path: 'reload/:rnd',
