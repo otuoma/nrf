@@ -88,7 +88,7 @@ a {
   border-top-left-radius: 6px;
 }
 #home-jumbotron form .input-group-append .btn{
-  background-color: var(--pucmm-dark-blue);
+  background-color: var(--pucmm-light-blue);
   color: #fff;
   border-radius: 15px;
 }
@@ -261,6 +261,27 @@ div#header-navbar-wrapper{
 
 .loginDropdownMenu {
   background-color: var(--pucmm-light-blue) !important;
+}
+.ngx-gallery-image {
+  background-position: center;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}
+.home-recent .row .col-3 .thumbnail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.home-recent .row .col-3 {
+ border: solid 1px #cccccc !important;
+  text-align: center;
+  display: table-cell;
+}
+
+.home-recent .row .col-3 img{
+  width: 100%;
+  vertical-align: middle;
 }
 
 

@@ -8,13 +8,12 @@
   </div>
   <ng-container *ngVar="(src$ | async) as src">
     <!-- don't use *ngIf="!isLoading" so the thumbnail can load in while the animation is playing -->
-    <img *ngIf="src !== null" class="thumbnail-content img-fluid" [ngClass]="{'d-none': isLoading}"
+    <img *ngIf="src !== null" class="thumbnail-content img-fluid"
          [src]="src | dsSafeUrl" [alt]="alt | translate" (error)="errorHandler()" (load)="successHandler()">
     <div *ngIf="src === null && !isLoading" class="thumbnail-content outer">
       <div class="inner">
-        <div class="thumbnail-placeholder centered lead" style="border: none; height: 100%;">
-<!--          {{ placeholder | translate }}-->
-          <img src="/assets/pucmm/images/pucmm-default-thumbnail.png" alt="" width="100%"/>
+        <div class="thumbnail-placeholder centered lead">
+          {{ placeholder | translate }}
         </div>
       </div>
     </div>
