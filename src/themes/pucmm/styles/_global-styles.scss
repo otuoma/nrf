@@ -6,6 +6,8 @@
 :root {
   --pucmm-dark-blue: #00588e;
   --pucmm-light-blue: #186caf;
+  --thumbnail-box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 1px 0 15px -4px rgba(31, 73, 125, 0.8), -1px 0 15px -4px rgba(31, 73, 125, 0.8);
+
 }
 
 
@@ -271,17 +273,32 @@ div#header-navbar-wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  box-shadow: var(--thumbnail-box-shadow)
 }
+
 .home-recent .row .col-3 {
- border: solid 1px #cccccc !important;
   text-align: center;
   display: table-cell;
+}
+
+#p-spc .thumbnail{
+  box-shadow: var(--thumbnail-box-shadow);
 }
 
 .home-recent .row .col-3 img{
   width: 100%;
   vertical-align: middle;
+}
+.simple-view-element-body .thumbnail{
+  box-shadow: var(--thumbnail-box-shadow);
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.simple-view-element-body .thumbnail img{
+  width: 100%;
+}
+li.breadcrumb-item a {
+  color: var(--pucmm-light-blue) !important;
 }
 
 
