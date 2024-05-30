@@ -281,7 +281,7 @@ div#header-navbar-wrapper{
   display: table-cell;
 }
 
-#p-spc .thumbnail{
+#p-spc .thumbnail, #p-cp .thumbnail{
   box-shadow: var(--thumbnail-box-shadow);
 }
 
@@ -300,7 +300,6 @@ div#header-navbar-wrapper{
 li.breadcrumb-item a {
   color: var(--pucmm-light-blue) !important;
 }
-
 
 @media only screen and (max-width: 768px) {
   .mobile-hidden {
