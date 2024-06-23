@@ -2,6 +2,7 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
 
 import { NavbarComponent as BaseComponent } from '../../../../app/navbar/navbar.component';
 import { slideMobileNav } from '../../../../app/shared/animations/slide';
+import {NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
 
 /**
  * Component representing the public navbar
@@ -23,5 +24,13 @@ export class NavbarComponent extends BaseComponent {
     } else {
       this.mainNav.nativeElement.style.height = '0px';
     }
+  }
+
+  openDropdown(dropdown: NgbDropdown) {
+    dropdown.open();
+  }
+
+  closeDropdown(dropdown: NgbDropdown) {
+    dropdown.close();
   }
 }

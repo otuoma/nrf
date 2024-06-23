@@ -1,4 +1,6 @@
 {
+  "navbar.home": "Home",
+  "navbar.aboutUs": "About Us",
   "repository.listelement.badge": "Repository",
   "repository.page.titleprefix": "Repository: ",
   "home.jumbotron.intro-paragraph": "The Institutional Repository strives to provide open access, capture, store, preserve, index and distribute in digital format, the research of the different faculties, departments, research centers and other units dedicated to research at the PUCMM as well as expand the visibility of research through global networks.",
@@ -2836,7 +2838,7 @@
 
   "menu.section.browse_global_by_title": "By Title",
 
-  "menu.section.browse_global_communities_and_collections": "Communities & Collections",
+  "menu.section.browse_global_communities_and_collections": "Collections",
 
   "menu.section.control_panel": "Control Panel",
 

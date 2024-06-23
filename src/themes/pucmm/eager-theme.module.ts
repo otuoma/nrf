@@ -62,6 +62,7 @@ import {HomePageModule} from '../../app/home-page/home-page.module';
 import {ChartModule} from 'angular-highcharts';
 import {UsageReportDataService} from '../../app/core/statistics/usage-report-data.service';
 import {HighchartsChartModule} from "highcharts-angular";
+import {NgbCarouselModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 /**
@@ -119,6 +120,7 @@ const DECLARATIONS = [
         HomePageModule,
         ChartModule,
         HighchartsChartModule,
+        NgbCarouselModule,
     ],
     declarations: [
         DECLARATIONS

@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, Inject, OnInit} from '@angular/core';
 import { TopLevelCommunityListComponent as BaseComponent } from '../../../../../app/home-page/top-level-community-list/top-level-community-list.component';
 import * as Highcharts from 'highcharts';
 
@@ -7,13 +7,17 @@ import {APP_CONFIG, AppConfig} from '../../../../../config/app-config.interface'
 import {CommunityDataService} from '../../../../../app/core/data/community-data.service';
 import {PaginationService} from '../../../../../app/core/pagination/pagination.service';
 import {SeriesOptionsType} from 'highcharts';
-
+import { Slide } from './slide.model';
 
 @Component({
   selector: 'ds-top-level-community-list',
   templateUrl: './top-level-community-list.component.html'
 })
 export class TopLevelCommunityListComponent extends BaseComponent implements OnInit{
+
+  slides: Slide[] = [];
+  groupedSlides: Slide[][] = [];
+
   communitiesList: Community[];
   data: {name: string, y: number}[] = [];
   isHighcharts = typeof Highcharts === 'object';
@@ -42,8 +46,6 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
       text: ''
     },
     tooltip: {
-      // pointFormat: '<b>{point.percentage:.1f}%</b> of all repository items'
-      // pointFormat: 'Moderada para la visibilidad'
       pointFormat: '<b>{point.percentage:.1f}%</b>'
     },
     plotOptions : {
@@ -62,7 +64,8 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
   constructor(
     @Inject(APP_CONFIG) appConfig: AppConfig,
     cds: CommunityDataService,
-    paginationService: PaginationService
+    paginationService: PaginationService,
+    private cdr: ChangeDetectorRef
   ) {
     super(appConfig, cds, paginationService);
   }
@@ -81,6 +84,10 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
           newData.push(
             {name: communityName, y: itemsCount}
           );
+          this.slides.push(
+            { itemsNumber: itemsCount, name: communityName }
+          );
+          console.log(this.slides);
         });
         const total = newData.reduce((acc: number, point) => Number(acc) + point.y, 0);
         const thresholdAngle = 0.05 * 360; // 5% of 360 degrees
@@ -104,16 +111,26 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
         // Round off y values to whole numbers
         newData.forEach(point => {
           point.y = Math.round(point.y);
-          console.log(point.y);
         });
         if ('data' in this.chartOptions.series[0]) {
           let sortedData = newData.sort((a, b) => a.name.localeCompare(b.name));
           this.chartOptions.series[0].data = [...sortedData];
-          console.log(this.chartOptions.series[0].data);
           this.updateFlag = true;
         }
+
+        this.groupSlides();
+        // this.cdr.detectChanges();
       }
     }));
+
+
+  }
+
+  groupSlides(): void {
+    this.groupedSlides = [];
+    for (let i = 0; i < this.slides.length; i += 3) {
+      this.groupedSlides.push(this.slides.slice(i, i + 3));
+    }
   }
 }
 

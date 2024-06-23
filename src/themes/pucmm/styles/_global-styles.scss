@@ -254,7 +254,8 @@ footer .social-network a:hover {
 div#header-navbar-wrapper{
   border-bottom: var(--pucmm-dark-blue) !important;
 }
-#collapsingNav .navbar-nav li .nav-item a{
+//#collapsingNav .navbar-nav li .nav-item a{
+#collapsingNav .navbar-nav .nav-item a{
   color: #fff !important;
 }
 .dropdown-menu {
@@ -297,9 +298,36 @@ div#header-navbar-wrapper{
 .simple-view-element-body .thumbnail img{
   width: 100%;
 }
+.fa-arrow-circle-right, fa-arrow-circle-left{
+  cursor: pointer;
+}
+.text-pucmm-blue{
+  color: var(--pucmm-dark-blue);
+}
 li.breadcrumb-item a {
   color: var(--pucmm-light-blue) !important;
 }
+.dropdown-item {
+  background-color: var(--pucmm-dark-blue) !important;
+  border: 0;
+}
+/* Adjust the position of the carousel indicators */
+ngb-carousel .carousel-indicators {
+  position: absolute;
+  bottom: 0px; /* Adjust the value as needed */
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 1;
+  top: 145px;
+}
+
+ngb-carousel .carousel-indicators li {
+  background-color: var(--pucmm-light-blue); /* Customize indicator color */
+  //border-radius: 50%;
+  //width: 10px;
+  //height: 10px;
+}
+
 
 @media only screen and (max-width: 768px) {
   .mobile-hidden {

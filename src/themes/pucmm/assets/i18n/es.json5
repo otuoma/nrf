@@ -1,4 +1,8 @@
 {
+  "navbar.home": "Inicio",
+
+  "navbar.aboutUs": "Acerca de",
+
   "repository.listelement.badge": "Repositorio",
   "repository.page.titleprefix": "Repositorio: ",
   "home.jumbotron.intro-paragraph": "El Repositorio Institucional se esfuerza por brindar acceso abierto, capturar, almacenar, preservar, indexar y distribuir en formato digital, las investigaciones de las diferentes facultades, departamentos, centros de investigación y otras unidades dedicadas a la investigación de la PUCMM así como ampliar la visibilidad de las investigaciones. a través de redes globales.",
