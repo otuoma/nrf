@@ -80,12 +80,13 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
         this.communitiesList.forEach((community: Community, index)=>{
           let itemsCount = Number(community.archivedItemsCount);
           let communityUrl = community.metadata['dc.identifier.uri'][0].value;
+          let communityId = community.id;
           let communityName = community.metadata['dc.title'][0].value;
           newData.push(
             {name: communityName, y: itemsCount}
           );
           this.slides.push(
-            { itemsNumber: itemsCount, name: communityName }
+            { itemsNumber: itemsCount, name: communityName, collectionUrl: communityId }
           );
           console.log(this.slides);
         });

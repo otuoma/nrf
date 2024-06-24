@@ -13,12 +13,14 @@
           <ng-template ngbSlide *ngFor="let group of groupedSlides">
             <div class="row">
               <div class="col-4" *ngFor="let slide of group">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-pucmm-blue font-weight-bold">{{ slide.itemsNumber }}</h5>
-                    <p class="card-text">{{ slide.name }}</p>
+                <a routerLink="/communities/{{ slide.collectionUrl }}">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-pucmm-blue font-weight-bold">{{ slide.itemsNumber }}</h5>
+                      <p class="card-text">{{ slide.name }}</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </ng-template>

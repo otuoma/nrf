@@ -5227,4 +5227,18 @@
   "navbar.home": "Inicio",
 
   "navbar.aboutUs": "Acerca de",
+
+  "navbar.library": "Biblioteca",
+
+  "navbar.investigation": "Investigación",
+
+  "navbar.contactUs": "Contáctenos",
+
+  "navbar.institutionalRepository": "Repositorio Institucional",
+
+  "navbar.selfArchiving": "Autoarchivo",
+
+  "navbar.staff": "Personal",
+
+  "navbar.licences": "Derechos, Licencias y Certificados",
 }

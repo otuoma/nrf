@@ -1470,7 +1470,7 @@
 
   "dso-selector.set-scope.community.head": "Select a search scope",
 
-  "dso-selector.set-scope.community.button": "Search all of Repository",
+  "dso-selector.set-scope.community.button": "Search Entire Repository",
 
   "dso-selector.set-scope.community.or-divider": "or",
 
@@ -2818,7 +2818,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "All of Repository",
+  "menu.section.browse_global": "Browse Repository",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -5245,4 +5245,18 @@
   "navbar.home": "Home",
 
   "navbar.aboutUs": "About Us",
+
+  "navbar.library": "Library",
+
+  "navbar.investigation": "Investigation",
+
+  "navbar.contactUs": "Contact Us",
+
+  "navbar.institutionalRepository": "Institutional Repository",
+
+  "navbar.selfArchiving": "Self Archiving",
+
+  "navbar.licences": "Rights, Licences and Certificates",
+
+  "navbar.staff": "Staff",
 }

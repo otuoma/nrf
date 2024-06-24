@@ -26,25 +26,42 @@
       <div id="collapsingNav" class="float-right">
         <ul class="navbar-nav navbar-navigation mr-auto shadow-none">
           <li class="nav-item">
-            <a class="nav-link mt-0" aria-current="page" routerLink="/home">
+            <a class="nav-link mt-0" routerLink="/home">
               {{ "navbar.home" | translate }}
             </a>
           </li>
-          <li class="nav-item dropdown" ngbDropdown #aboutUsDropdown="ngbDropdown" (mouseenter)="openDropdown(aboutUsDropdown)" (mouseleave)="closeDropdown(aboutUsDropdown)">            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" ngbDropdownToggle>
+          <li class="nav-item dropdown" ngbDropdown #aboutUsDropdown="ngbDropdown"
+              (mouseenter)="openDropdown(aboutUsDropdown)" (mouseleave)="closeDropdown(aboutUsDropdown)">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" ngbDropdownToggle>
             {{ "navbar.aboutUs" | translate }}
             </a>
             <div class="dropdown-menu my-0" aria-labelledby="navbarDropdown" ngbDropdownMenu>
-              <a class="dropdown-item" href="#">Institutional Repository</a>
-              <a class="dropdown-item" href="#">Self Archiving</a>
-              <a class="dropdown-item" href="#">Rights, Licences and Certificates</a>
-              <a class="dropdown-item" href="#">Staff</a>
+              <a class="dropdown-item" href="#">{{ "navbar.institutionalRepository" | translate}}</a>
+              <a class="dropdown-item" href="#">{{ "navbar.selfArchiving" | translate }}</a>
+              <a class="dropdown-item" href="#">{{ "navbar.licences" | translate }}</a>
+              <a class="dropdown-item" href="#">{{ "navbar.staff" | translate }}</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mt-0" routerLink="/home">
+              {{ "navbar.library" | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mt-0" routerLink="/home">
+              {{ "navbar.investigation" | translate }}
+            </a>
           </li>
           <li *ngIf="(isXsOrSm$ | async) && (isAuthenticated$ | async)">
             <ds-themed-user-menu [inExpandableNavbar]="true"></ds-themed-user-menu>
           </li>
           <li *ngFor="let section of (sections | async)">
             <ng-container *ngComponentOutlet="(sectionMap$ | async).get(section.id)?.component; injector: (sectionMap$ | async).get(section.id)?.injector;"></ng-container>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mt-0" routerLink="/contact-us">
+              {{ "navbar.contactUs" | translate }}
+            </a>
           </li>
         </ul>
       </div>
