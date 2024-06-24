@@ -1,48 +1,47 @@
-<h4 class="mt-4 text-center border-bottom pb-3 border-dark border-2">Navegar por</h4>
+<!--<h4 class="mt-4 text-center border-bottom pb-3 border-dark border-2">Navegar por</h4>-->
 
-<div class="mt-4 mb-4">
+<div class="mt-4 mb-5">
   <a routerLink="/browse/author">
     <figure class="mx-auto text-center">
       <img class="figure-img img-fluid"
            src="/assets/pucmm/images/browse/autor.png" alt=""/>
       <figcaption class="figure-caption text-center font-weight-bold">
-        Autoras
+        {{ "customSidebar.author" | translate }}
       </figcaption>
     </figure>
   </a>
 </div>
 
-<div class="mt-4 mb-4">
+<div class="mt-4 mb-5">
   <a routerLink="/browse/subject" class="mt-4 mb-4">
     <figure class="mx-auto text-center">
-      <img class="figure-img img-fluid" width="80px"
-           src="/assets/pucmm/images/browse/education.png" alt=""/>
+      <img class="figure-img img-fluid" src="/assets/pucmm/images/browse/subject.png" alt=""/>
       <figcaption class="figure-caption text-center font-weight-bold">
-        Sujeta
+        {{ "customSidebar.subject" | translate }}
       </figcaption>
     </figure>
   </a>
 </div>
 
-<div class="mt-4 mb-4">
+<div class="mt-4 mb-5">
   <a routerLink="/browse/dateissued" class="mt-4 mb-4">
     <figure class="mx-auto text-center">
-      <img class="figure-img img-fluid" width="80px"
-           src="/assets/pucmm/images/browse/calendar.png" alt=""/>
+      <img class="figure-img img-fluid"
+           src="/assets/pucmm/images/browse/type.png" alt=""/>
       <figcaption class="figure-caption text-center font-weight-bold">
-        Fecha de emisión
+        {{ "customSidebar.dateIssued" | translate }}
       </figcaption>
     </figure>
   </a>
 </div>
 
-<div class="mt-4 mb-4">
+<div class="mt-4 mb-5">
   <a routerLink="/browse/title" class="mt-4 mb-4">
     <figure class="mx-auto text-center">
-      <img class="figure-img img-fluid" width="80px"
-           src="/assets/pucmm/images/browse/puzzle.png" alt=""/>
+      <img class="figure-img img-fluid"
+           src="/assets/pucmm/images/browse/title.png" alt=""/>
       <figcaption class="figure-caption text-center font-weight-bold">
-        <h5>Títulos</h5>
+        {{ "customSidebar.title" | translate }}
       </figcaption>
     </figure>
   </a>

@@ -44,7 +44,7 @@
               <span class="show-onhover">Teléfono</span> 1(809) 200 1962
             </li>
             <li>
-              <i class="fas fa-whatsapp text-white"></i>
+              <i class="fa-brands fa-whatsapp fa-lg"></i>
               <span class="show-onhover">WhatsApp</span>  (809) 723 1960
             </li>
             <li>
@@ -88,6 +88,30 @@
       <p class="text-center pt-4">
         © {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }} - PUCMM
       </p>
+      <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <a routerLink="/community-list" class="btn text-white">
+            {{ 'footer.communityList' | translate}}
+          </a>
+        </li>
+        <li>
+          <button class="btn btn-link text-white" type="button" (click)="showCookieSettings()">
+            {{ 'footer.link.cookies' | translate}}
+          </button>
+        </li>
+        <li *ngIf="showPrivacyPolicy">
+          <a class="btn text-white"
+             routerLink="info/privacy">{{ 'footer.link.privacy-policy' | translate}}</a>
+        </li>
+        <li *ngIf="showEndUserAgreement">
+          <a class="btn text-white"
+             routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' | translate}}</a>
+        </li>
+        <li *ngIf="showSendFeedback$ | async">
+          <a class="btn text-white"
+             routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
+        </li>
+      </ul>
     </div>
   </div>
 </footer>
