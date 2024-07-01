@@ -161,6 +161,8 @@ import { BrowseByComponent } from './app/shared/browse-by/browse-by.component';
 import { RegisterEmailFormComponent } from './app/register-email-form/register-email-form.component';
 import { AboutPucmmComponent } from './app/about-pucmm/about-pucmm.component';
 import {CustomSidebarComponent} from "./app/custom-sidebar/custom-sidebar.component";
+import { CustomSelfArchivingComponent } from './app/custom-self-archiving/custom-self-archiving.component';
+import { CustomLicencesComponent } from './app/custom-licences/custom-licences.component';
 
 const DECLARATIONS = [
   AboutPucmmComponent,
@@ -312,7 +314,9 @@ const DECLARATIONS = [
     ],
   declarations: [
     DECLARATIONS,
-    CustomSidebarComponent
+    CustomSidebarComponent,
+    CustomSelfArchivingComponent,
+    CustomLicencesComponent
   ],
   exports: [
     CommunityPageSubCollectionListComponent

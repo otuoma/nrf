@@ -5259,4 +5259,16 @@
   "navbar.licences": "Rights, Licences and Certificates",
 
   "navbar.staff": "Staff",
+
+  "customSidebar.author": "Filter by Authors",
+
+  "customSidebar.subject": "Filter by Subject",
+
+  "customSidebar.dateIssued": "Filter by Date Issued",
+
+  "customSidebar.title": "Filter by Title",
+
+  "footer.communityList": "Communities",
+
+  "navbar.regulations": "Regulations",
 }

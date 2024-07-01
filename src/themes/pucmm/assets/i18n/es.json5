@@ -4,10 +4,18 @@
   "navbar.library": "Biblioteca",
   "navbar.investigation": "Investigación",
   "navbar.contactUs": "Contáctenos",
-  "navbar.institutionalRepository": "Repositorio Institucional",
+  "navbar.institutionalRepository": "Investigare PUCMM",
   "navbar.selfArchiving": "Autoarchivo",
-  "navbar.staff": "Personal",
-  "navbar.licences": "Derechos, Licencias y Certificados",
+  "navbar.staff": "Personal de contacto",
+  "navbar.regulations": "Reglamento",
+
+  "footer.communityList": "Comunidades",
+
+  "customSidebar.author": "Filtrar por Autor",
+  "customSidebar.subject": "Filtrar por Materia",
+  "customSidebar.dateIssued": "Filtrar por fecha de emisión",
+  "customSidebar.title": "Filtrar por Título",
+
   "repository.listelement.badge": "Repositorio",
   "repository.page.titleprefix": "Repositorio: ",
   "home.jumbotron.intro-paragraph": "El Repositorio Institucional se esfuerza por brindar acceso abierto, capturar, almacenar, preservar, indexar y distribuir en formato digital, las investigaciones de las diferentes facultades, departamentos, centros de investigación y otras unidades dedicadas a la investigación de la PUCMM así como ampliar la visibilidad de las investigaciones. a través de redes globales.",

@@ -10,7 +10,7 @@
 
 }
 body{
-  font-family: Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji" !important;
+  font-family: 'Lato',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji" !important;
 }
 
 /*** ADDED BY SYSTEMS LIBRARIAN ***/
@@ -75,7 +75,7 @@ a {
 #home-jumbotron{
   color: #fff;
   text-align: center;
-  background-image: url("/assets/pucmm/images/home-slider/research-lab-1.jpg");
+  background-image: url("/assets/pucmm/images/pucmm-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-shadow: 2px 2px 2px #000;
@@ -316,20 +316,65 @@ li.breadcrumb-item a {
 /* Adjust the position of the carousel indicators */
 ngb-carousel .carousel-indicators {
   position: absolute;
-  bottom: 0px; /* Adjust the value as needed */
+  bottom: 0; /* Adjust the value as needed */
   left: 30%;
   transform: translateX(-50%);
   z-index: 1;
-  top: 145px;
+  top: 170px;
 }
 
 ngb-carousel .carousel-indicators li {
-  background-color: var(--pucmm-light-blue); /* Customize indicator color */
-  //border-radius: 50%;
-  //width: 10px;
-  //height: 10px;
+  background-color: var(--pucmm-light-blue);
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+}
+.carousel-item{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.figure-caption {
+  color: var(--pucmm-dark-blue);
+}
+.custom-border.bright-red::before {
+  background-color: #FF5733;
+}
+.custom-border.bright-green::before {
+  background-color: #33FF57;
+}
+.custom-border.bright-blue::before {
+  background-color: #3357FF;
+}
+.custom-border.bright-pink::before {
+  background-color: #FF33A1;
+}
+.custom-border.bright-yellow::before {
+  background-color: #FFC733;
+}
+.custom-border.bright-cyan::before {
+  background-color: #33FFF6;
+}
+.custom-border.bright-purple::before {
+  background-color: #8D33FF;
+}
+.custom-border.bright-orange::before {
+  background-color: #FF8633;
 }
 
+.custom-border::before {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 5px;
+  position: absolute;
+  left: 35%;
+}
+.preserve-line-breaks {
+  white-space: unset !important;
+}
+.simple-view-element-body{
+  text-align: justify;
+}
 
 @media only screen and (max-width: 768px) {
   .mobile-hidden {

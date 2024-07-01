@@ -20,8 +20,6 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
 
   communitiesList: Community[];
   data: {name: string, y: number}[] = [];
-  isHighcharts = typeof Highcharts === 'object';
-  Highcharts: typeof Highcharts = Highcharts;
   updateFlag = false;
   series: SeriesOptionsType = {
     type: 'pie',
@@ -85,8 +83,12 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
           newData.push(
             {name: communityName, y: itemsCount}
           );
-          this.slides.push(
-            { itemsNumber: itemsCount, name: communityName, collectionUrl: communityId }
+          this.slides.push({
+            itemsNumber: itemsCount,
+            name: communityName,
+            collectionUrl: communityId,
+            communityColor: this.getRandomColor(),
+          }
           );
           console.log(this.slides);
         });
@@ -118,13 +120,9 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
           this.chartOptions.series[0].data = [...sortedData];
           this.updateFlag = true;
         }
-
         this.groupSlides();
-        // this.cdr.detectChanges();
       }
     }));
-
-
   }
 
   groupSlides(): void {
@@ -132,6 +130,22 @@ export class TopLevelCommunityListComponent extends BaseComponent implements OnI
     for (let i = 0; i < this.slides.length; i += 3) {
       this.groupedSlides.push(this.slides.slice(i, i + 3));
     }
+  }
+
+  private getRandomColor() {
+    let colors: string[] = [
+      'bright-red', // Bright Red
+      'bright-green', // Bright Green
+      'bright-blue', // Bright Blue
+      'bright-pink', // Bright Pink
+      'bright-yellow', // Bright Yellow
+      'bright-cyan', // Bright Cyan
+      'bright-purple', // Bright Purple
+      'bright-orange'  // Bright Orange
+    ];
+
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
   }
 }
 

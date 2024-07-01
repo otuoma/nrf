@@ -41,6 +41,8 @@ import { ServerCheckGuard } from './core/server-check/server-check.guard';
 import { MenuResolver } from './menu.resolver';
 import { ThemedPageErrorComponent } from './page-error/themed-page-error.component';
 import {AboutPucmmComponent} from '../themes/pucmm/app/about-pucmm/about-pucmm.component';
+import {CustomLicencesComponent} from "../themes/pucmm/app/custom-licences/custom-licences.component";
+import {CustomSelfArchivingComponent} from "../themes/pucmm/app/custom-self-archiving/custom-self-archiving.component";
 
 @NgModule({
   imports: [
@@ -57,6 +59,14 @@ import {AboutPucmmComponent} from '../themes/pucmm/app/about-pucmm/about-pucmm.c
           { path: 'page/about-the-repository',
             pathMatch: 'full',
             component: AboutPucmmComponent
+          },
+          { path: 'page/rights-and-licences',
+            pathMatch: 'full',
+            component: CustomLicencesComponent
+          },
+          { path: 'page/self-archiving',
+            pathMatch: 'full',
+            component: CustomSelfArchivingComponent
           },
           {
             path: 'reload/:rnd',

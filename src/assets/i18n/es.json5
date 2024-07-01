@@ -5234,11 +5234,23 @@
 
   "navbar.contactUs": "Contáctenos",
 
-  "navbar.institutionalRepository": "Repositorio Institucional",
+  "navbar.institutionalRepository": "Investigare PUCMM",
 
   "navbar.selfArchiving": "Autoarchivo",
 
-  "navbar.staff": "Personal",
+  "navbar.staff": "Personal de contacto",
 
   "navbar.licences": "Derechos, Licencias y Certificados",
+
+  "customSidebar.author": "Filtrar por Autor",
+
+  "customSidebar.subject": "Filtrar por Materia",
+
+  "customSidebar.dateIssued": "Filtrar por fecha de emisión",
+
+  "customSidebar.title": "Filtrar por Título",
+
+  "footer.communityList": "Comunidades",
+
+  "navbar.regulations": "Reglamento",
 }

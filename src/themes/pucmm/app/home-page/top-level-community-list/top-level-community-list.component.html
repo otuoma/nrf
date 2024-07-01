@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6 py-4" id="home-community-list">
+    <div class="col-md-12 py-4 text-center" id="home-community-list">
       <h2>
         {{'home.top-level-communities.head' | translate}}
       </h2>
@@ -11,12 +11,13 @@
                       [interval]="5000"
                       [showNavigationIndicators]="true">
           <ng-template ngbSlide *ngFor="let group of groupedSlides">
-            <div class="row">
-              <div class="col-4" *ngFor="let slide of group">
+            <div class="row d-flex justify-content-center align-items-center text-center">
+              <div class="col-3 mb-4" *ngFor="let slide of group">
                 <a routerLink="/communities/{{ slide.collectionUrl }}">
                   <div class="card">
-                    <div class="card-body text-center">
-                      <h5 class="card-title text-pucmm-blue font-weight-bold">{{ slide.itemsNumber }}</h5>
+                    <div class="card-body text-center custom-border {{ slide.communityColor }}">
+                      <h5 class="card-title text-pucmm-blue font-weight-bold mt-4">
+                        {{ slide.itemsNumber }}</h5>
                       <p class="card-text">{{ slide.name }}</p>
                     </div>
                   </div>
@@ -34,15 +35,15 @@
           </div>
         </ngb-carousel>
     </div>
-    <div class="col-md-6 pt-4">
-      <figure class="highcharts-figure">
-        <highcharts-chart
-          [Highcharts]="Highcharts"
-          [options]="chartOptions" [title]="'my title'"
-          [(update)]="updateFlag" *ngIf="isHighcharts" [callbackFunction]="chartCallback"
-          style="width: 100%; height: 400px; display: block;"
-        ></highcharts-chart>
-      </figure>
-    </div>
+<!--    <div class="col-md-6 pt-4">-->
+<!--      <figure class="highcharts-figure">-->
+<!--        <highcharts-chart-->
+<!--          [Highcharts]="Highcharts"-->
+<!--          [options]="chartOptions" [title]="'my title'"-->
+<!--          [(update)]="updateFlag" *ngIf="isHighcharts" [callbackFunction]="chartCallback"-->
+<!--          style="width: 100%; height: 400px; display: block;"-->
+<!--        ></highcharts-chart>-->
+<!--      </figure>-->
+<!--    </div>-->
   </div>
 </div>

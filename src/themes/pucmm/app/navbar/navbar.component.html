@@ -36,14 +36,15 @@
             {{ "navbar.aboutUs" | translate }}
             </a>
             <div class="dropdown-menu my-0" aria-labelledby="navbarDropdown" ngbDropdownMenu>
-<!--              <a class="dropdown-item" href="#">{{ "navbar.institutionalRepository" | translate}}</a>-->
-              <a class="dropdown-item" routerLink="page/self-archiving">
-                {{ "navbar.selfArchiving" | translate }}</a>
-              <a class="dropdown-item" routerLink="page/rights-and-licences">
-                {{ "navbar.licences" | translate }}</a>
-              <a class="dropdown-item" href="https://pucmm.edu.do/biblioteca/info-general/contacto">
-                {{ "navbar.staff" | translate }}
-              </a>
+              <a class="dropdown-item" routerLink="/home">
+                {{ "navbar.institutionalRepository" | translate}}</a>
+              <a class="dropdown-item" target="_blank"
+                 href="https://www.pucmm.edu.do/biblioteca/servicios/reglamento-sistema-de-bibliotecas/about-the-repository">
+                {{ "navbar.regulations" | translate }}</a>
+              <a target="_blank"
+                 class="dropdown-item"
+                 href="https://www.pucmm.edu.do/biblioteca/info-general/contacto-sistema-de-bibliotecas/about-the-repository">
+                {{ "navbar.staff" | translate }}</a>
             </div>
           </li>
           <li class="nav-item">

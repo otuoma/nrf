@@ -6,8 +6,16 @@
   "navbar.contactUs": "Contact Us",
   "navbar.institutionalRepository": "Institutional Repository",
   "navbar.selfArchiving": "Self Archiving",
-  "navbar.licences": "Rights, Licences and Certificates",
   "navbar.staff": "Staff",
+  "navbar.regulations": "Regulations",
+
+  "footer.communityList": "Communities",
+
+  "customSidebar.author": "Filter by Authors",
+  "customSidebar.subject": "Filter by Subject",
+  "customSidebar.dateIssued": "Filter by Date Issued",
+  "customSidebar.title": "Filter by Title",
+
   "repository.listelement.badge": "Repository",
   "repository.page.titleprefix": "Repository: ",
   "home.jumbotron.intro-paragraph": "The Institutional Repository strives to provide open access, capture, store, preserve, index and distribute in digital format, the research of the different faculties, departments, research centers and other units dedicated to research at the PUCMM as well as expand the visibility of research through global networks.",
