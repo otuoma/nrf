@@ -19,7 +19,7 @@
      class="navbar navbar-light navbar-expand-md p-md-0 navbar-container" role="navigation" [attr.aria-label]="'nav.main.description' | translate">
   <!-- TODO remove navbar-container class when https://github.com/twbs/bootstrap/issues/24726 is fixed -->
   <a class="navbar-brand mobile-hidden" routerLink="/home">
-    <img src="/assets/pucmm/images/pucmm-logo.png" alt=""/>
+    <img src="/assets/pucmm/images/pucmm-logo-1.png" alt=""/>
   </a>
   <div class="navbar-inner-container w-100" [class.container]="!(isXsOrSm$ | async)">
     <div class="reset-padding-md w-100">
@@ -39,11 +39,11 @@
               <a class="dropdown-item" routerLink="/home">
                 {{ "navbar.institutionalRepository" | translate}}</a>
               <a class="dropdown-item" target="_blank"
-                 href="https://www.pucmm.edu.do/biblioteca/servicios/reglamento-sistema-de-bibliotecas/about-the-repository">
+                 href="https://www.pucmm.edu.do/biblioteca/servicios/reglamento-sistema-de-bibliotecas">
                 {{ "navbar.regulations" | translate }}</a>
               <a target="_blank"
                  class="dropdown-item"
-                 href="https://www.pucmm.edu.do/biblioteca/info-general/contacto-sistema-de-bibliotecas/about-the-repository">
+                 href="https://www.pucmm.edu.do/biblioteca/info-general/contacto">
                 {{ "navbar.staff" | translate }}</a>
             </div>
           </li>
